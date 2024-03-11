@@ -19,6 +19,40 @@
   display: block;
 }
 
+.columns.contact > div > div {
+  margin-left: 30px;
+  padding-left: 75px;
+}
+
+.columns.contact > div > div:first-child {
+  border-left: 10px solid var(--border-color);
+}
+
+.columns.contact > div > div a.button:any-link, button {
+  font-family: var(--body-font-family);
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 20px 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--background-color);
+  background-color: var(--contact-background-color);
+  /* margin: 16px 16px; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.columns.contact > div > div a.button:hover {
+  background-color: var(--contact-hover-color);
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;

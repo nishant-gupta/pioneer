@@ -39,6 +39,41 @@
 
   /* nav height */
   --nav-height: 64px;
+
+
+  /** copied **/
+  /* fonts */
+--heading-font-family: GilroyExtraBold, "Lucida Sans Regular", "Arial Black", sans-serif;
+--body-font-family: HelveticaNowTextRegular, Helvetica, Arial, sans-serif;
+--fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+
+/* colors */
+--text-color: #000000;
+--link-color: #1e772d;
+--link-hover-color: #1e772d;
+--background-color: #ffffff;
+--overlay-background-color: #eeeeee;
+--highlight-background-color: #cccccc;
+--footer-background-color: #262626;
+--footer-darker-background-color: #1f1f1f;
+--footer-text-color: #ffffff;
+--border-color: #acb5c0;
+--contact-background-color: #ef6023;
+--contact-hover-color: #d85921;
+
+/* sizes */
+--heading-font-size-xxl: 56px;
+--heading-font-size-xl: 32px;
+--heading-font-size-l: 28px;
+--heading-font-size-m: 24px;
+--heading-font-size-s: 20px;
+--heading-font-size-xs: 18px;
+--body-font-size-l: 20px;
+--body-font-size-m: 16px;
+--body-font-size-s: 14px;
+
+
+
 }
 
 @font-face {
@@ -50,11 +85,11 @@
 
 @media (width >= 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
+    --heading-font-size-xxl: 40px;
+    --heading-font-size-xl: 32px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 20px;
+    --heading-font-size-s: 18px;
     --heading-font-size-xs: 22px;
   }
 }
@@ -137,30 +172,31 @@ a.button:any-link, button {
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
+  /* border: 2px solid transparent;
+  padding: 5px 30px; */
   text-align: center;
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  color: var(--link-color);
+  /* background-color: var(--link-color);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  border-radius: 30px; */
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
+  color: var(--text-color);
+  text-decoration: underline;
   cursor: pointer;
 }
 
-button:disabled, button:disabled:hover {
+/* button:disabled, button:disabled:hover {
   background-color: var(--light-color);
   cursor: unset;
-}
+} */
 
 a.button.secondary, button.secondary {
   background-color: unset;
@@ -207,4 +243,9 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+main .section.highlight > div > h2, 
+main .section.highlight > div > p {
+  text-align: center;
 }
