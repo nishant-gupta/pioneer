@@ -340,8 +340,17 @@ header .breadcrumbs ol li:last-of-type {
   opacity: 1;
 }
 
+header span.icon.icon-search {
+  border: 1px solid #acb5c0;
+  padding: 5px 5px;
+}
+
 @media screen and (width >= 900px) {
   header .breadcrumbs {
     display: block;
+  }
+
+  header .nav-wrapper {
+    box-shadow: 0 1px 10px -4px rgba(0,0,0,.75);
   }
 }
