@@ -12,6 +12,9 @@ import {
   loadBlocks,
   loadCSS,
   getMetadata,
+  loadScript,
+  toCamelCase,
+  toClassName,
 } from './aem.js';
 
 // Define an execution context
@@ -168,7 +171,7 @@ async function loadLazy(doc) {
     const { loadLazy: runLazy } = await import('../plugins/experimentation/src/index.js');
     await runLazy(document, { audiences: AUDIENCES }, pluginContext);
   }
-  
+
   const main = doc.querySelector('main');
   await loadBlocks(main);
 
