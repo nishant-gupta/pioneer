@@ -138,7 +138,7 @@ async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
 
-  await window.hlx.plugins.run('loadEager');
+  //await window.hlx.plugins.run('loadEager');
 
   const main = doc.querySelector('main');
   if (main) {
@@ -151,7 +151,7 @@ async function loadEager(doc) {
     /* if desktop (proxy for fast connection) or fonts already loaded, load fonts.css */
     if (window.innerWidth >= 900 || sessionStorage.getItem('fonts-loaded')) {
       loadFonts();
-      window.hlx.plugins.run('loadLazy');
+      //window.hlx.plugins.run('loadLazy');
     }
   } catch (e) {
     // do nothing
