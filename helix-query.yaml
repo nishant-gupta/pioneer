@@ -1,6 +1,8 @@
 indices:
   pioneer:
-    target: /query-index.json
+    target: /query-index-magazine.json
+    include:
+      - '**/magazine/**'
     properties:
       title:
         select: main > div:nth-of-type(1) > h1
@@ -18,5 +20,5 @@ indices:
         select: main > div:nth-of-type(1) > p:nth-of-type(1) > picture > img
         value: attribute(el, 'src')
       url:
-        select: meta[property="og:url"]
-        value: attribute(el, 'content')
+        select: main
+        value: path
