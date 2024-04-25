@@ -22,3 +22,63 @@ indices:
       url:
         select: main
         value: path
+      paragraphs.1.text:
+        select: main > div:nth-of-type(2)
+        value: innerHTML(el)
+      paragraphs.2.text:
+        select: main > div:nth-of-type(3)
+        value: innerHTML(el)
+      paragraphs.3.text:
+        select: main > div:nth-of-type(4)
+        value: innerHTML(el)
+      paragraphs.4.text:
+        select: main > div:nth-of-type(5)
+        value: innerHTML(el)
+      paragraphs.5.text:    
+        select: main > div:nth-of-type(6)
+        value: innerHTML(el)
+      paragraphs.6.text:
+        select: main > div:nth-of-type(7)
+        value: innerHTML(el)
+      paragraphs.7.text:
+        select: main > div:nth-of-type(8)
+        value: innerHTML(el)
+      paragraphs.8.text:  
+        select: main > div:nth-of-type(9)
+        value: innerHTML(el)
+      paragraphs.9.text:
+        select: main > div:nth-of-type(10)
+        value: innerHTML(el)
+      paragraphs.10.text:
+        select: main > div:nth-of-type(11)
+        value: innerHTML(el)
+      paragraphs.1.image:
+        select: main > div:nth-of-type(2) > picture > img
+        value: attribute(el, 'src')
+      paragraphs.2.image:
+        select: main > div:nth-of-type(3) > picture > img
+        value: attribute(el, 'src')
+      paragraphs.3.image:
+        select: main > div:nth-of-type(4) > picture > img
+        value: attribute(el, 'src')
+      paragraphs.4.image:
+        select: main > div:nth-of-type(5) > picture > img
+        value: attribute(el, 'src')
+      paragraphs.5.image:
+        select: main > div:nth-of-type(6) > picture > img
+        value: attribute(el, 'src')
+      paragraphs.6.image:
+        select: main > div:nth-of-type(7) > picture > img
+        value: attribute(el, 'src')
+      paragraphs.7.image:
+        select: main > div:nth-of-type(8) > picture > img
+        value: attribute(el, 'src')
+      paragraphs.8.image:
+        select: main > div:nth-of-type(9) > picture > img
+        value: attribute(el, 'src')
+      paragraphs.9.image:
+        select: main > div:nth-of-type(10) > picture > img
+        value: attribute(el, 'src')
+      paragraphs.10.image:
+        select: main > div:nth-of-type(11) > picture > img
+        value: attribute(el, 'src')
