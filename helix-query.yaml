@@ -23,62 +23,62 @@ indices:
         select: main
         value: path
       paragraphs.1.text:
-        select: main > div:nth-of-type(2)
-        value: innerHTML(el)
+        select: main > div:nth-of-type(2):not(:has(picture))
+        values: innerHTML(el)
       paragraphs.2.text:
-        select: main > div:nth-of-type(3)
+        select: main > div:nth-of-type(3):not(:has(picture))
         value: innerHTML(el)
       paragraphs.3.text:
-        select: main > div:nth-of-type(4)
+        select: main > div:nth-of-type(4):not(:has(picture))
         value: innerHTML(el)
       paragraphs.4.text:
-        select: main > div:nth-of-type(5)
+        select: main > div:nth-of-type(5):not(:has(picture))
         value: innerHTML(el)
       paragraphs.5.text:    
-        select: main > div:nth-of-type(6)
+        select: main > div:nth-of-type(6):not(:has(picture))
         value: innerHTML(el)
       paragraphs.6.text:
-        select: main > div:nth-of-type(7)
+        select: main > div:nth-of-type(7):not(:has(picture))
         value: innerHTML(el)
       paragraphs.7.text:
-        select: main > div:nth-of-type(8)
+        select: main > div:nth-of-type(8):not(:has(picture))
         value: innerHTML(el)
       paragraphs.8.text:  
-        select: main > div:nth-of-type(9)
+        select: main > div:nth-of-type(9):not(:has(picture))
         value: innerHTML(el)
       paragraphs.9.text:
-        select: main > div:nth-of-type(10)
+        select: main > div:nth-of-type(10):not(:has(picture))
         value: innerHTML(el)
       paragraphs.10.text:
-        select: main > div:nth-of-type(11)
+        select: main > div:nth-of-type(11):not(:has(picture))
         value: innerHTML(el)
       paragraphs.1.image:
-        select: main > div:nth-of-type(2) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(2) picture > img
+        values: attribute(el, 'src')
       paragraphs.2.image:
-        select: main > div:nth-of-type(3) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(3) picture > img
+        values: attribute(el, 'src')
       paragraphs.3.image:
-        select: main > div:nth-of-type(4) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(4) picture > img
+        values: attribute(el, 'src')
       paragraphs.4.image:
-        select: main > div:nth-of-type(5) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(5) picture > img
+        values: attribute(el, 'src')
       paragraphs.5.image:
-        select: main > div:nth-of-type(6) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(6) picture > img
+        values: attribute(el, 'src')
       paragraphs.6.image:
-        select: main > div:nth-of-type(7) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(7) picture > img
+        values: attribute(el, 'src')
       paragraphs.7.image:
-        select: main > div:nth-of-type(8) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(8) picture > img
+        values: attribute(el, 'src')
       paragraphs.8.image:
-        select: main > div:nth-of-type(9) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(9) picture > img
+        values: attribute(el, 'src')
       paragraphs.9.image:
-        select: main > div:nth-of-type(10) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(10) picture > img
+        values: attribute(el, 'src')
       paragraphs.10.image:
-        select: main > div:nth-of-type(11) > picture > img
-        value: attribute(el, 'src')
+        select: main > div:nth-of-type(11) picture > img
+        values: attribute(el, 'src')
