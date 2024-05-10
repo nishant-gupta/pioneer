@@ -5,19 +5,19 @@ indices:
       - '**/magazine/**'
     properties:
       title:
-        select: main > div:nth-of-type(1) > h1
+        select: main > div:nth-of-type(1) h1
         value: textContent(el)
       slogan:
-        select: main > div:nth-of-type(1) > p:nth-of-type(3)
+        select: main > div:nth-of-type(1) p:nth-of-type(3)
         value: textContent(el)
       date:
-        select: main > div:nth-of-type(1) > p:nth-of-type(4)
+        select: main > div:nth-of-type(1) p:nth-of-type(4)
         value: textContent(el)
       magazine_category:
-        select: main > div:nth-of-type(1) > p:nth-of-type(2)
+        select: main > div:nth-of-type(1) p:nth-of-type(2)
         value: textContent(el)
       image:
-        select: main > div:nth-of-type(1) > p:nth-of-type(1) > picture > img
+        select: main > div:nth-of-type(1) p:nth-of-type(1) > picture > img
         value: attribute(el, 'src')
       url:
         select: main
