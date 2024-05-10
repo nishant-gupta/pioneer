@@ -52,6 +52,36 @@ indices:
       paragraphs.10.text:
         select: main > div:nth-of-type(11):not(:has(picture))
         value: innerHTML(el)
+      paragraphs.11.text:
+        select: main > div:nth-of-type(12):not(:has(picture))
+        value: innerHTML(el)
+      paragraphs.12.text:
+        select: main > div:nth-of-type(13):not(:has(picture))
+        value: innerHTML(el)
+      paragraphs.13.text:
+        select: main > div:nth-of-type(14):not(:has(picture))
+        value: innerHTML(el)
+      paragraphs.14.text:
+        select: main > div:nth-of-type(15):not(:has(picture))
+        value: innerHTML(el)
+      paragraphs.15.text:
+        select: main > div:nth-of-type(16):not(:has(picture))
+        value: innerHTML(el)
+      paragraphs.16.text:
+        select: main > div:nth-of-type(17):not(:has(picture))
+        value: innerHTML(el)
+      paragraphs.17.text:
+        select: main > div:nth-of-type(18):not(:has(picture))
+        value: innerHTML(el)
+      paragraphs.18.text:
+        select: main > div:nth-of-type(19):not(:has(picture))
+        value: innerHTML(el)
+      paragraphs.19.text:
+        select: main > div:nth-of-type(20):not(:has(picture))
+        value: innerHTML(el)
+      paragraphs.20.text:
+        select: main > div:nth-of-type(21):not(:has(picture))
+        value: innerHTML(el)
       paragraphs.1.image:
         select: main > div:nth-of-type(2) picture > img
         values: attribute(el, 'src')
@@ -81,4 +111,34 @@ indices:
         values: attribute(el, 'src')
       paragraphs.10.image:
         select: main > div:nth-of-type(11) picture > img
+        values: attribute(el, 'src')
+      paragraphs.11.image:
+        select: main > div:nth-of-type(12) picture > img
+        values: attribute(el, 'src')
+      paragraphs.12.image:
+        select: main > div:nth-of-type(13) picture > img
+        values: attribute(el, 'src')
+      paragraphs.13.image:
+        select: main > div:nth-of-type(14) picture > img
+        values: attribute(el, 'src')
+      paragraphs.14.image:
+        select: main > div:nth-of-type(15) picture > img
+        values: attribute(el, 'src')
+      paragraphs.15.image:
+        select: main > div:nth-of-type(16) picture > img
+        values: attribute(el, 'src')
+      paragraphs.16.image:
+        select: main > div:nth-of-type(17) picture > img
+        values: attribute(el, 'src')
+      paragraphs.17.image:
+        select: main > div:nth-of-type(18) picture > img
+        values: attribute(el, 'src')
+      paragraphs.18.image:
+        select: main > div:nth-of-type(19) picture > img
+        values: attribute(el, 'src')
+      paragraphs.19.image:
+        select: main > div:nth-of-type(20) picture > img
+        values: attribute(el, 'src')
+      paragraphs.20.image:
+        select: main > div:nth-of-type(21) picture > img
         values: attribute(el, 'src')
