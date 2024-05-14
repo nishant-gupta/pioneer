@@ -141,7 +141,7 @@ async function loadEager(doc) {
   //await window.hlx.plugins.run('loadEager');
 
   const main = doc.querySelector('main');
-  if (main) {
+  if (main) { 
     decorateMain(main);
     document.body.classList.add('appear');
     await waitForLCP(LCP_BLOCKS);
